@@ -23,8 +23,7 @@ public class RestaurantData {
         String host = "https://maps.googleapis.com/maps/api/place/nearbysearch/json" +
                 "?keyword=restaurant" +
                 "&location=" + curLatitude + "," + curLongitude +
-                "&radius=" + distance +
-                "&key=AIzaSyAbkZwMglVk7o-i1N93RhJy9abVbHHs_PE";
+                "&radius=" + distance;
 
 //        String charset = "UTF-8";
         HttpResponse<JsonNode> response = Unirest.get(host)
