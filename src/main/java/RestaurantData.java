@@ -44,7 +44,6 @@ public class RestaurantData {
         for(Restaurant r: list) System.out.println(r);
     }
 
-
     public static void main(String[] args) {
         RestaurantData rd = new RestaurantData(32.987145999999996, -96.92448, 500);
         rd.printRestaurants();
