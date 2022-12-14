@@ -1,4 +1,5 @@
 import apis.FetchRestaurantServlet;
+import apis.LogoutServlet;
 import apis.RestaurantServlet;
 import apis.ShowInMap;
 import org.apache.velocity.app.VelocityEngine;
@@ -26,7 +27,7 @@ public class AppServer {
         handler.addServlet(RestaurantServlet.class, "/restaurants");
         handler.addServlet(FetchRestaurantServlet.class, "/restaurantsData");
         handler.addServlet(ShowInMap.class, "/map");
-
+        handler.addServlet(LogoutServlet.class, "/logout");
         ResourceHandler resourceHandler = new ResourceHandler();
         resourceHandler.setDirectoriesListed(true);
         resourceHandler.setResourceBase("templates");

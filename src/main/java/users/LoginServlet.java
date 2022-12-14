@@ -46,7 +46,7 @@ public class LoginServlet extends HttpServlet {
         boolean flag = dbHandler.authenticate(user, pass);
         if (flag) {
             session.setAttribute("username", user);
-            response.getWriter().println("successfully login");
+            response.sendRedirect("/restaurants");
         }
         else
             response.sendRedirect("/login");
