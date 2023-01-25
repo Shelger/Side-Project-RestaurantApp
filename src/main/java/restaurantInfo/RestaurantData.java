@@ -28,7 +28,7 @@ public class RestaurantData {
                 "?keyword=restaurant" +
                 "&location=" + curLatitude + "," + curLongitude +
                 "&radius=" + distance +
-                "&key=AIzaSyAbkZwMglVk7o-i1N93RhJy9abVbHHs_PE";
+                "&key=";
 
 //        String charset = "UTF-8";
         HttpResponse<JsonNode> response = Unirest.get(host)
